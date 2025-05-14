@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Дом для пушистых - помощь бездомным котятам</title>
+		<link rel="icon" href="./icon.png" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">Дом для пушистых</div>
+				<div class="tagline">
+					Помогаем бездомным котятам обрести любящую семью
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<section class="hero">
+				<div class="hero-text">
+					<h1>Каждый котенок заслуживает тепла и заботы</h1>
+					<p>
+						Мы спасаем, лечим и находим дом для бездомных котят. Присоединяйтесь
+						к нашему движению и помогите изменить жизни этих маленьких созданий.
+					</p>
+					<a href="#help" class="cta-button">Как я могу помочь?</a>
+				</div>
+				<div class="hero-image">
+					<img src="./img/cat.webp" alt="Милые котята, которым нужна помощь" />
+				</div>
+			</section>
+			<section class="sound-section">
+				<div class="container">
+					<h2 style="text-align: center">Послушайте наших котят</h2>
+					<div style="text-align: center; margin: 2rem 0; position: relative">
+						<button id="playRandomSound" class="cta-button sound-button">
+							<span>Мяукнуть!</span>
+						</button>
+						<div
+							id="hearts-container"
+							style="
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								pointer-events: none;
+								overflow: visible;
+							"
+						></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="qr-section">
+				<h2>Поддержите нас одним сканированием</h2>
+				<p>
+					Отсканируйте QR-код, чтобы сделать пожертвование или узнать больше о
+					нашей работе
+				</p>
+				<div class="qr-code">
+					<span
+						><img
+							src="./img/photo_2025-05-14_14-57-21.jpg"
+							alt="qr"
+							class="qr-code"
+					/></span>
+				</div>
+				<p>
+					Или перейдите по ссылке:
+					<a href="#"
+						>https://www.tinkoff.ru/rm/r_BxIvPEKwYc.QCuTwhfQFs/o7MNV93703</a
+					>
+				</p>
+			</section>
+
+			<section class="stats">
+				<div class="stat-item">
+					<div class="stat-number">1,250+</div>
+					<div>Спасенных котят</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">800+</div>
+					<div>Нашедших дом</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">50+</div>
+					<div>Волонтеров</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">7</div>
+					<div>Лет работы</div>
+				</div>
+			</section>
+
+			<section id="help" class="how-to-help">
+				<h2 style="text-align: center; margin-bottom: 2rem">
+					Как вы можете помочь
+				</h2>
+				<div class="help-options">
+					<div class="help-card">
+						<h3>Финансовая помощь</h3>
+						<p>
+							Даже небольшая сумма поможет оплатить корм, лечение и содержание
+							котят.
+						</p>
+						<a
+							href="https://www.tinkoff.ru/rm/r_BxIvPEKwYc.QCuTwhfQFs/o7MNV93703"
+							class="cta-button"
+							>Пожертвовать</a
+						>
+					</div>
+
+					<div class="help-card">
+						<h3>Волонтерство</h3>
+						<p>
+							Помогите с уходом за котятами, транспортировкой или организацией
+							мероприятий.
+						</p>
+						<a
+							href="https://www.tinkoff.ru/rm/r_BxIvPEKwYc.QCuTwhfQFs/o7MNV93703"
+							class="cta-button"
+							>Стать волонтером</a
+						>
+					</div>
+
+					<div class="help-card">
+						<h3>Взять котенка</h3>
+						<p>
+							Подарите дом и любовь маленькому созданию. Все наши котята здоровы
+							и привиты.
+						</p>
+						<a
+							href="https://www.tinkoff.ru/rm/r_BxIvPEKwYc.QCuTwhfQFs/o7MNV93703"
+							class="cta-button"
+							>Выбрать питомца</a
+						>
+					</div>
+
+					<div class="help-card">
+						<h3>Распространение</h3>
+						<p>
+							Расскажите о нас друзьям, поделитесь в соцсетях или разместите наш
+							QR-код.
+						</p>
+						<a
+							href="https://www.tinkoff.ru/rm/r_BxIvPEKwYc.QCuTwhfQFs/o7MNV93703"
+							class="cta-button"
+							>Поделиться</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>© 2025 Дом для пушистых. Все права защищены.</p>
+				<p>Контактный телефон: +7 (123) 456-78-90</p>
+				<p>Email: dodepcasebattle@mail.ru</p>
+			</div>
+		</footer>
+		<audio id="sound1" src="uwu.ogg" preload="auto"></audio>
+		<audio id="sound2" src="uwu2.ogg" preload="auto"></audio>
+		<audio id="sound3" src="uwu3.ogg" preload="auto"></audio>
+		<script>
+			document
+				.getElementById('playRandomSound')
+				.addEventListener('click', function () {
+					// Воспроизведение случайного звука
+					const sounds = ['sound1', 'sound2', 'sound3']
+					const randomSoundId =
+						sounds[Math.floor(Math.random() * sounds.length)]
+					const sound = document.getElementById(randomSoundId)
+					sound.currentTime = 0
+					sound.play()
+
+					// Анимация нажатия
+					this.classList.add('button-press')
+					setTimeout(() => {
+						this.classList.remove('button-press')
+					}, 200)
+
+					// Создание сердечек
+					createHearts(this)
+				})
+
+			function createHearts(button) {
+				const container = document.getElementById('hearts-container')
+				const buttonRect = button.getBoundingClientRect()
+				const containerRect = container.getBoundingClientRect()
+
+				// Центр кнопки относительно контейнера
+				const centerX =
+					buttonRect.left - containerRect.left + buttonRect.width / 2
+				const centerY =
+					buttonRect.top - containerRect.top + buttonRect.height / 2
+
+				// Создаем 8-12 сердечек
+				const heartCount = 8 + Math.floor(Math.random() * 5)
+
+				for (let i = 0; i < heartCount; i++) {
+					const heart = document.createElement('div')
+					heart.className = 'heart'
+
+					// Начальная позиция в центре кнопки
+					heart.style.left = `${centerX}px`
+					heart.style.top = `${centerY}px`
+
+					// Случайные параметры анимации
+					const size = 12 + Math.random() * 8
+					const duration = 1.2 + Math.random() * 0.8
+					const delay = Math.random() * 0.3
+					const angle = Math.random() * Math.PI * 2 // случайный угол в радианах
+					const distance = 40 + Math.random() * 60
+
+					heart.style.width = `${size}px`
+					heart.style.height = `${size}px`
+					heart.style.animationDuration = `${duration}s`
+					heart.style.animationDelay = `${delay}s`
+					heart.style.setProperty('--end-x', `${Math.cos(angle) * distance}px`)
+					heart.style.setProperty(
+						'--end-y',
+						`${Math.sin(angle) * distance - 80}px`
+					)
+					heart.style.setProperty('--rotate', `${Math.random() * 60 - 30}deg`)
+
+					container.appendChild(heart)
+
+					// Удаляем сердечко после анимации
+					setTimeout(() => {
+						heart.remove()
+					}, (duration + delay) * 1000)
+				}
+			}
+		</script>
+	</body>
+</html>
